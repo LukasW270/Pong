@@ -5,12 +5,12 @@ public class PongPaddle {
     public PongPaddle(int top, int left, int w, int h){
         x = left;
         y = top;
-        w = width;
-        h = height;
+        width = w;
+        height = h;
     }
 
     public int getBottomY(){
-        return y-height;
+        return y+(height-1);
     }
 
     public int getLeftX(){
@@ -19,11 +19,11 @@ public class PongPaddle {
     //good
 
     public int getRightX(){
-        return x-width;
+        return x+(width-1);
     }
 
     public int getTopY(){
-        return y-height;
+        return y;
     }
     //good
 
